@@ -1,0 +1,14 @@
+﻿#BNF+IAT 1.0 UTF-8;
+!grammar weather;
+
+!slot <city>;
+!slot <day>;
+!slot <how>;
+
+!start <callstart>;
+<callstart>:<city><day><how>;
+<city>:广州!id(10001)|深圳!id(10001);
+<day>:今天!id(10002)|明天!id(10002)|后天!id(10002);
+<how>:天气怎么样|天气|天气如何;
+
+

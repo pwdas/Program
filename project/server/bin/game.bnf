@@ -1,0 +1,9 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar game;
+!slot <open>;
+!slot <contact>;
+
+!start <gamestart>;
+<gamestart>:<open><contact>;
+<open>:打开|请打开|开;
+<contact>:游戏|推箱子;
